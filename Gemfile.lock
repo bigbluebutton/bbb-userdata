@@ -1,0 +1,17 @@
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    nori (2.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bbbevents!
+
+BUNDLED WITH
+   1.16.1

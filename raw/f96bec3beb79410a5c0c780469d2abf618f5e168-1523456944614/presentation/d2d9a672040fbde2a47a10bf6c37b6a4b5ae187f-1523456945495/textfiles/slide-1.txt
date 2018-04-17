@@ -1,0 +1,14 @@
+Welcome to
+BigBlueButton
+BigBlueButton is an open source web
+conferencing system for on-line learning.
+Click the images on the right to view
+tutorial videos for instructors and
+students.
+If you need help with your audio, watch
+setting up audio.
+To view more tutorial videos, along with
+information on the open source project,
+visit bigbluebutton.org.
+Moderator / Presenter
+Viewer
