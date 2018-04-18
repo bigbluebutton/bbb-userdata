@@ -29,96 +29,37 @@ def get_all_user_related_meeting_data(user_id)
 	#recordings_dir = Dir.open "/var/bigbluebutton/recording/raw"
 	data = []
 
-  # Parse events.
-  rec = BBBEvents.parse("#{raw_archive_dir}/events.xml")
-
 	recordings_dir.each do |recording_dir|
 		path = File.absolute_path("./raw/" + recording_dir + "/events.xml")
-
-
 		if File.exist?(path)
-      reccord = BBBEvents.parse(path)
-      puts reccord.class.name
-=begin
-			event_file = File.readlines("./raw/" + recording_dir + "/events.xml")
-			found = false
-			event_file.each do |line|
-				if user_regx.match(line)
-					found = true 
-					break
-				end
-			end
-
-			if found
-				xml_document = File.open(path) { |f| Nokogiri::XML(f) }
-				data_for_meeting_file = MeetingInvolvement.new(xml_document, user_id)
-				puts data_for_meeting_file
-				data.push(data_for_meeting_file)
-			end
-=end
+      xml_document = File.open(path) { |f| Nokogiri::XML(f) }
+      if xml_document.xpath("//event").any?
+        #reccord is a bbbevents RecordingData object
+        reccord = BBBEvents.parse(File.new(path))
+        data.push reccord
+      end
 		end
 	end
-	return data
+
+  data.each do |meeting_inv|
+	  print_user_data(meeting_inv, user_id)
+  end
+
+  return
 end
 
-#data should be an array of Meeting Involvement objects
-def print_data(data)
-  data.each do |meeting_inv|
-    
+def print_user_data(recordingData, user_id)
+    meeting_id = recordingData.data[:meeting_id]
+    puts ""
+    puts "User summary for meeting #{meeting_id}: " + recordingData.data[:attendees][user_id].to_s
+    print_user_history(recordingData.user_history(user_id), meeting_id)
+end
+
+def print_user_history(history_hash, meeting_id)
+  if history_hash != nil
+    puts "User history for meeting #{meeting_id}: "
+    history_hash.keys.sort.each do |timestamp|
+      puts "#{timestamp}: #{history_hash[timestamp]}"
+    end
   end
 end
-
-
-
-
-
-=begin	
-
-<event timestamp="164650380" module="PARTICIPANT" eventname="ParticipantJoinEvent">
-    <userId>w_5vxrflelmi6q</userId>
-    <externalUserId>student_id_382573058475493753</externalUserId>
-    <role>MODERATOR</role>
-    <name>User 2232075</name>
-  </event>
-
-
-
- <event timestamp="164807112" module="PARTICIPANT" eventname="ParticipantJoinEvent">
-    <userId>w_xcgcoqhsxj24</userId>
-    <externalUserId>student_id_382573058475493753</externalUserId>
-    <role>VIEWER</role>
-    <name>User 2232075</name>
-  </event>
-
-
-children for event node:
-children= [
-	#<Nokogiri::XML::Text:0x2ae6f30bd164 "\n    ">,
-
-	#<Nokogiri::XML::Element:0x2ae6f30bd088 name="userId" 
-		children=[#<Nokogiri::XML::Text:0x2ae6f30bce30 "w_xcgcoqhsxj24">]
-	>, 
-
-	#<Nokogiri::XML::Text:0x2ae6f30bcc28 "\n    ">, 
-
-	#<Nokogiri::XML::Element:0x2ae6f30bcb38 name="externalUserId" 
-		children=[#<Nokogiri::XML::Text:0x2ae6f30bc8f4 "student_id_382573058475493753">]
-	>, 
-
-	#<Nokogiri::XML::Text:0x2ae6f30bc700 "\n    ">, 
-
-	#<Nokogiri::XML::Element:0x2ae6f30bc610 name="role" 
-		children=[#<Nokogiri::XML::Text:0x2ae6f30bc3a4 "VIEWER">]
-	>, 
-
-	#<Nokogiri::XML::Text:0x2ae6f30bc19c "\n    ">, 
-
-	#<Nokogiri::XML::Element:0x2ae6f30bc0c0 name="name" 
-		children=[#<Nokogiri::XML::Text:0x2ae6f30b3ed4 "User 2232075">]
-	>,
-
-	 #<Nokogiri::XML::Text:0x2ae6f30b3d30 "\n  ">]
-
-
-
-=end

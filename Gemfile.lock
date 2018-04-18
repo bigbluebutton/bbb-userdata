@@ -1,3 +1,9 @@
+PATH
+  remote: /home/lana/Code/bbb-events
+  specs:
+    bbbevents (0.1.0)
+      nokogiri
+      nori
 
 GEM
   remote: https://rubygems.org/
