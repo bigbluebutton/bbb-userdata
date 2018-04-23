@@ -59,7 +59,14 @@ def print_user_history(history_hash, meeting_id)
   if history_hash != nil
     puts "User history for meeting #{meeting_id}: "
     history_hash.keys.sort.each do |timestamp|
-      puts "#{timestamp}: #{history_hash[timestamp]}"
+      events_for_time = history_hash[timestamp]
+      if events_for_time.class.name == "String"
+        puts "#{timestamp}: #{events_for_time}"
+      else
+        events_for_time.each do |event|
+          puts "#{timestamp}: #{event}"
+        end
+      end
     end
   end
 end
