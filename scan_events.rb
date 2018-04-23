@@ -42,6 +42,7 @@ def get_all_user_related_meeting_data(user_id)
 	end
 
   data.each do |meeting_inv|
+  	 #meeting_inv is a bbbevents RecordingData object
 	  print_user_data(meeting_inv, user_id)
   end
 
@@ -49,24 +50,25 @@ def get_all_user_related_meeting_data(user_id)
 end
 
 def print_user_data(recordingData, user_id)
-    meeting_id = recordingData.data[:meeting_id]
-    puts ""
-    puts "User summary for meeting #{meeting_id}: " + recordingData.data[:attendees][user_id].to_s
-    print_user_history(recordingData.user_history(user_id), meeting_id)
-end
-
-def print_user_history(history_hash, meeting_id)
+  meeting_id = recordingData.data[:meeting_id]
+  puts ""
+  puts "User summary for meeting #{meeting_id}: " + recordingData.data[:attendees][user_id].to_s
+  history_hash = recordingData.user_history(user_id)
   if history_hash != nil
     puts "User history for meeting #{meeting_id}: "
     history_hash.keys.sort.each do |timestamp|
       events_for_time = history_hash[timestamp]
       if events_for_time.class.name == "String"
-        puts "#{timestamp}: #{events_for_time}"
+        puts "#{convert_date(timestamp)}: #{events_for_time}"
       else
         events_for_time.each do |event|
-          puts "#{timestamp}: #{event}"
+          puts "#{convert_date(timestamp)}: #{event}"
         end
       end
     end
   end
+end
+
+def convert_date(t)
+  Time.at(t.to_i).strftime("%m/%d/%Y %H:%M:%S")
 end
