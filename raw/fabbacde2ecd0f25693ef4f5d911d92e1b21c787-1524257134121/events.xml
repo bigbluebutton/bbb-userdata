@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recording meeting_id="fabbacde2ecd0f25693ef4f5d911d92e1b21c787-1524257134121" bbb_version="2.0.0">
+  <meeting id="fabbacde2ecd0f25693ef4f5d911d92e1b21c787-1524257134121" externalId="random-3666039" name="random-3666039" breakout="false"/>
+  <metadata isBreakout="false" meetingName="random-3666039" meetingId="random-3666039"/>
+  <event timestamp="874808915" module="PRESENTATION" eventname="ConversionCompletedEvent">
+    <presentationName>d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1524257134136</presentationName>
+    <originalFilename>default.pdf</originalFilename>
+  </event>
+  <event timestamp="874808915" module="PRESENTATION" eventname="SharePresentationEvent">
+    <share>true</share>
+    <presentationName>d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1524257134136</presentationName>
+  </event>
+  <event timestamp="874809111" module="PARTICIPANT" eventname="ParticipantJoinEvent">
+    <userId>w_oomm4uammuma</userId>
+    <externalUserId>student_id_382573058475493753</externalUserId>
+    <role>MODERATOR</role>
+    <name>User 8260895</name>
+  </event>
+  <event timestamp="874809111" module="PARTICIPANT" eventname="AssignPresenterEvent">
+    <assignedBy>w_oomm4uammuma</assignedBy>
+    <userid>w_oomm4uammuma</userid>
+    <name>User 8260895</name>
+  </event>
+  <event timestamp="874813290" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>32.915057915057915</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>65.09775524981897</xOffset>
+  </event>
+  <event timestamp="874813360" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>32.722007722007724</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>65.74945691527878</xOffset>
+  </event>
+  <event timestamp="874813404" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>32.625482625482626</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>66.908037653874</xOffset>
+  </event>
+  <event timestamp="874813500" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>34.84555984555985</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>64.95293265749457</xOffset>
+  </event>
+  <event timestamp="874813546" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>44.4980694980695</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>55.322230267921796</xOffset>
+  </event>
+  <event timestamp="874813595" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>56.27413127413127</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>53.07748008689356</xOffset>
+  </event>
+  <event timestamp="874813702" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>56.37065637065637</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>54.16364952932658</xOffset>
+  </event>
+  <event timestamp="874813784" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>57.335907335907336</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>56.26357711803041</xOffset>
+  </event>
+  <event timestamp="874813840" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>58.108108108108105</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>59.81173062997828</xOffset>
+  </event>
+  <event timestamp="874813959" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>56.66023166023166</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>61.404779145546705</xOffset>
+  </event>
+  <event timestamp="874814025" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>54.44015444015444</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>62.92541636495293</xOffset>
+  </event>
+  <event timestamp="874814793" module="VOICE" eventname="ParticipantJoinedEvent">
+    <muted>true</muted>
+    <callernumber>User 8260895</callernumber>
+    <talking>false</talking>
+    <callername>User 8260895</callername>
+    <bridge>74359</bridge>
+    <participant>w_oomm4uammuma</participant>
+  </event>
+  <event timestamp="874815006" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>46.42857142857143</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>74.22157856625634</xOffset>
+  </event>
+  <event timestamp="874815089" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>20.366795366795365</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>96.08979000724113</xOffset>
+  </event>
+  <event timestamp="874815173" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>-0.09652509652509653</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>-0.07241129616220131</xOffset>
+  </event>
+  <event timestamp="874817695" module="PARTICIPANT" eventname="RecordStatusEvent">
+    <userId>w_oomm4uammuma</userId>
+    <status>true</status>
+  </event>
+  <event timestamp="874818980" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>39.38223938223938</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>98.33454018826937</xOffset>
+  </event>
+  <event timestamp="874819037" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>59.26640926640927</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>84.28674873280232</xOffset>
+  </event>
+  <event timestamp="874819123" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>76.25482625482626</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>65.31498913830558</xOffset>
+  </event>
+  <event timestamp="874819203" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>91.6988416988417</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>48.66039102099928</xOffset>
+  </event>
+  <event timestamp="874819288" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>99.8069498069498</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>44.170890658942795</xOffset>
+  </event>
+  <event timestamp="874819370" module="WHITEBOARD" eventname="WhiteboardCursorMoveEvent">
+    <yOffset>-0.09652509652509653</yOffset>
+    <userId>w_oomm4uammuma</userId>
+    <xOffset>-0.07241129616220131</xOffset>
+  </event>
+  <event timestamp="874845956" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>0</endIndex>
+    <startIndex>0</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>lhsdigh</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874846412" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>7</endIndex>
+    <startIndex>7</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>egw lik</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874846638" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>14</endIndex>
+    <startIndex>14</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>fghjewo</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874847000" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>21</endIndex>
+    <startIndex>21</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>ighelkh</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874847820" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>28</endIndex>
+    <startIndex>28</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text> likwjf</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874848222" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>35</endIndex>
+    <startIndex>35</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>eiwfjlw</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874849781" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>42</endIndex>
+    <startIndex>42</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>ek jioe</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874850324" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>49</endIndex>
+    <startIndex>49</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>jwoiewf</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874851909" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>56</endIndex>
+    <startIndex>56</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text> sidhos</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874853234" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>63</endIndex>
+    <startIndex>63</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>ihfs oj</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874853785" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>70</endIndex>
+    <startIndex>70</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>iefwoie</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874854972" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>77</endIndex>
+    <startIndex>77</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>hf</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874868965" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>79</endIndex>
+    <startIndex>79</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text> gdfgsd</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874870272" module="CAPTION" eventname="EditCaptionHistoryEvent">
+    <endIndex>86</endIndex>
+    <startIndex>86</startIndex>
+    <locale>Chinese (Simplified)</locale>
+    <text>fd</text>
+    <localeCode>zh_CN</localeCode>
+  </event>
+  <event timestamp="874875394" module="PARTICIPANT" eventname="RecordStatusEvent">
+    <userId>w_oomm4uammuma</userId>
+    <status>false</status>
+  </event>
+</recording>
